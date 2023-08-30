@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.root{
+    --cor-primaria: #00216a;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #1FB0E0;
+    --cor-quartenária: #000;
+    --cor-hover: rgb(176, 224, 230);
+    --cor-rodape: rgb(41, 51, 194);
+
+    --fonte-primaria: 'Montserrat',sans-serif;
+    --fonte-secundaria: 'Krona One',sans-serif;
+}
+.apresentacao{
+    display: flex;
+    justify-content: center;
+    flex-direction:column; 
+    align-items: center;
+    margin-top: 100px;
+}   
+body{
+    color:#ffffff;
+    font-size: 40px;
+    background-color: #00216a;
+}
+.conteudo_login{
+    display: flex;
+}
+.campo_login{
+    padding: 20px;
+    width: 450px; /*comprimento do campo*/
+    background-color: #00216a;
+    border: 2px solid #1FB0E0;
+    color: #F6F6F6;
+    font-size: 18px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.campo_login::placeholder{
+    color:#ffffff;
+}
+.botao{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: #1FB0E0;    
+    border: none;    
+    padding: 20px;
+    width: 200px;
+    border-radius:10px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+}
+.botao:hover    /*mouse em cima do botão*/{
+    background: rgb(84, 198, 255);
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.Registro{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+}
+.Registro:hover{
+    color : rgb(191, 208, 215);
+}
+.rodape{
+    background-color: rgb(41, 51, 194);
+    margin-top: 160px;
+    padding: 20px;
+    color:#ffffff;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+

@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+ 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+
+}
+
+/*========================================== Cabeçalho ========================================================*/
+
+
+.botao{
+
+    display: flex;
+
+    text-decoration: none;
+
+    color: #ffffff;
+
+    font-family: 'Montserrat',sans-serif;
+
+    font-size: 14px;
+
+    font-weight: bolder;
+
+    text-transform: uppercase;
+
+    letter-spacing: 0.20px;
+
+    margin-bottom: 30px;
+
+}
+
+.botao:hover{
+
+    color : rgb(191, 208, 215);
+
+}
+
+.home:hover
+
+{
+
+    opacity: 80%;
+
+}
+
+.login:hover
+
+{
+
+    opacity: 80%;
+
+}
+
+.entrar:hover
+
+{
+
+    opacity: 80%;
+
+}
+
+/*============================================ Texto ===========================================================*/
+
+/*Main*/
+.apresentacao{
+    display: grid;
+    gap: 150px;
+    grid-template-columns: repeat(2,2fr);
+}
+
+/*Div do texto de apresentação*/
+.texto_apresentacao{
+    text-align: justify;
+    margin: 50px 0 50px 50px;
+}
+
+/*Div para cada parágrafo*/
+.paragrafo{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 500px;
+}
+/*Seção com todos os elementos adicionais*/
+.adicionais{
+    margin-top: 50px;
+}
+
+/*Título de cada seção*/
+.titulo_adicionais{
+    font-weight: bold;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+/*Foto dos desenvolvedores*/
+.imagens_adicionais{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+/*Div dos links das redes sociais*/
+.navegacao_adicionais{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/*Link das redes sociais*/
+.adicionais_links{
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-family: 'Monteserrat', sans-serif;
+}
+
+/*Campo dos ícone das redes socias*/
+.icon_redes{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 0 5px;
+    width: 100px;
+}
+
+.icon_redes:hover
+{
+    opacity: 75%;
+}
+
+/*ícone instagram*/
+.icon-instagram
+{
+    display: flex;
+    background: radial-gradient(circle at 33% 100%, #FEDA77 4%, #F58529 30%, #DD2A7B 62%, #8134AF 85%, #515BD4);
+    border-radius: 100%;
+    border-width: 2rem;
+    padding: 0.1rem 0.4rem  0.2rem 0.4rem;
+}
+
+.icon-instagram:hover
+{
+    transition: .5s;
+    opacity: 80%;
+}
+/*ícone twitter*/
+.icon-twitter
+{
+    display: flex;
+    background-color: #00acee;
+    border-radius: 100%;
+    border-width: 2rem;
+    padding: 0.1rem 0.4rem  0.2rem 0.4rem;
+}
+
+.icon-twitter:hover
+{
+    transition: .5s;
+    background-color: #4bc4f4;
+ }
+
+/*=========================================== Rodapé ==========================================================*/
+
+/*Div que engloba todo o rodapé*/
+.rodape
+{
+    background-color: #0089e4;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 1rem;
+    display: flex;
+    gap: 9rem ;
+    align-content: center;
+    font-size: 15px;
+    font-family:'Montserrat',sans-serif;
+    margin-bottom: -1.5rem;
+    margin-top: 4rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+/*Div pro título da 1° coluna*/
+.info_empresa_element
+{
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: left bottom;
+    background-position-y: 2.5rem;
+    height: 50px;
+    width: 110px;
+    margin-bottom: 0.8rem;
+}
+/*Títulos de cada coluna*/
+.info_empresa
+{
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+/*Elementos de cada coluna*/
+.elementos_suporte
+{
+    display: flex;
+    justify-items: baseline;
+    text-decoration: none;
+    color: white;
+    margin-bottom: .5rem;
+}
+
+.elementos_suporte:hover
+{
+    transition: 0.2ms;
+    opacity: 80%;
+}
+
+/*Div que engloba toda a 4° coluna*/
+.info_contatos
+{
+    display: flex;
+    gap: .2rem;
+    flex-direction: column;
+    justify-content: baseline;
+    justify-items: baseline;
+ }
+ /*Div para cada elemento da coluna*/
+.elementos
+{
+    display: flex;
+    justify-items: baseline;
+    gap: .5rem;
+    margin-bottom: .5rem;
+}
+
+/*Barra final do rodapé*/
+.rodape_element
+{
+    background-color: #005E9D;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    color: white;
+    padding: -4rem;
+}
+
+/*Informações contidas noo*/
+.rodape_element_info
+{
+    margin-top: 1%;
+    display: flex;
+    gap: 0.5rem;
+    font-family:'Montserrat',sans-serif;
+    font-size: 15px;
+}
+
+/*Sublinhado em baixo do títulos da 3° coluna*/
+.info_links_element
+{
+    background-image: linear-gradient(white, white);
+    background-repeat: no-repeat;
+    background-size: 100% 3px;
+    background-position: left bottom;
+    background-position-y: 2.5rem;
+    height: 50px;
+    width: 140px;
+    margin-bottom: 0.8rem;
+}
+
+
+/*Deixando o site responsivo*/
+@media (max-width: 1024px)
+{
+    .rodape
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .apresentacao
+    {
+        grid-template-columns:repeat(1,1fr)
+    }
+    .adicionais
+    {
+        margin-top: -7rem;
+        margin-left: 3rem;
+    }
+    .contatos
+    {
+        margin-top: -11rem;
+    }
+    .links
+    {
+        margin-top: -11rem;
+    }
+    .paragrafo  
+    {
+        width: 50rem;
+    }
+}
+
+@media (max-width: 770px)
+{
+    .rodape
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);   
+    }
+    .contatos
+    {
+        margin-top: -11rem;
+    }
+    .links
+    {
+        margin-top: -11rem;
+    }
+    .paragrafo  
+    {
+        width: 35rem;
+    }
+}
+
+@media (max-width: 770px)
+{
+    .rodape
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 520px)
+{
+    .rodape
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-bottom: 4rem;
+    }
+    .suporte
+    {
+        margin-top: -11rem;
+    }
+    .paragrafo
+    {
+        width: 15rem;
+    }
+
+    .imagens_adicionais
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 2rem;
+    }
+
+}

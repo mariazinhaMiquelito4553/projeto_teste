@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+:root{
+    --cor-primaria: #00216a;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #1FB0E0;
+    --cor-quartenária: #000;
+    --cor-hover: rgb(176, 224, 230);
+    --cor-rodape: rgb(41, 51, 194);
+
+    --fonte-primaria: 'Montserrat',sans-serif;
+    --fonte-secundaria: 'Krona One',sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+/*============================================= Cabeçalho =============================================*/
+.cabecalho{
+    display: flex;
+    background-color: var(--cor-primaria);
+}
+.centro{
+    display: flex;
+    justify-content: flex-end;
+    width:1700px;
+    margin-top: 30px;
+}
+.logo{
+    padding-left: 20px;
+}
+.cabecalho_menu{
+    display: flex;
+    align-items: baseline;
+    gap: 100px;  
+    margin-right: 100px;  
+}
+.cabecalho_menu_links{
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: var(--fonte-primaria,sans-serif);
+    font-size: 22px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 0.15px;
+}  
+.cabecalho_menu_links:hover{
+    color : rgb(191, 208, 215);
+}
+.botao{
+    text-decoration: none;
+    padding: 25px;
+    margin-bottom: 200px;
+    font-size: 20px;
+    font-family: var(--fonte-secundaria,sans-serif);
+    border-radius: 15px;
+    background-color: var(--cor-terciaria);
+    border: var(--cor-terciaria);
+    color: var(--cor-secundaria);
+}
+.botao:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-quartenária);
+}
+
+/*============================================= Menu Lateral =============================================*/
+
+.menu_lateral_links{
+    display: block;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria,sans-serif);
+    padding: 20px 5px;
+    font-size: 25px;
+    text-align: center;
+    background-color: var(--cor-terciaria);
+}
+.menu_lateral_links:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-quartenária);
+}
+.imagem_menu_lateral{
+    width: 40px;
+}
+.checkbox{
+    display: none;
+}
+.checkbox:checked ~ .navegacao_menu_lateral{
+    transform: translateX(350px);
+}
+.navegacao_menu_lateral{
+    width: 350px;
+    height: 100%;
+    left: -350px;
+    position: absolute;
+    transition: all .5s;
+}
+.check{
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.menu_lateral_conteudo{
+    list-style: none;
+    top: 65px;
+    position: absolute;
+    width: 100%;
+}
+/*============================================= Rodapé =============================================*/
+.rodape{
+    background-color: var(--cor-primaria);
+    padding: 20px;
+    color: var(--cor-secundaria);
+    font-family: 'Poppins',sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+/*============================================= Perguntas =============================================*/
+.campo_perguntas{
+    display: flex;
+    flex-direction:column; 
+    width: 1665px;
+    height: 1260px;
+    margin-left: 350px;
+}
+.titulo{
+    align-self: flex-start;
+    align-self: center;
+    color:#00216a;
+    font-family: 'Secular One',sans-serif;
+    font-size: 60px;
+}
+.conteudo_pergunta{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    margin-right: 200px;
+    border-radius: 20px;
+}
+.perguntas_informacoes{
+    display:flex;
+    align-items: row;
+    gap: 40px;
+    margin: 50px 50px 0 50px;
+}
+.informacoes{
+    font-size: 20px;
+    background-color: rgb(191, 216, 238);
+    padding: 5px;
+    border-radius: 5px;
+    align-self: center;
+    
+}
+.texto_pergunta{
+    font-size: 30px;
+    margin: 50px 50px 50px 50px;
+}
+
